@@ -1,0 +1,191 @@
+.menu-page {
+    min-height: calc(100vh - 65px);
+    background: #f3f4f6;
+    padding: 40px 60px 60px;
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 40px;
+    margin: 10px 0 40px;
+    color: #1f2937;
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.menu-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.menu-image {
+    height: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e5e7eb;
+
+    font-size: 65px;
+}
+
+.menu-content {
+    padding: 22px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.menu-name {
+    margin: 0 0 12px;
+
+    font-size: 23px;
+
+    color: #111827;
+}
+
+.menu-category {
+    width: fit-content;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    background: #eef2ff;
+    color: #4f46e5;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.menu-price {
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #111827;
+
+    margin: 18px 0 10px;
+}
+
+.menu-availability {
+    font-size: 14px;
+
+    margin-bottom: 20px;
+
+    color: #6b7280;
+}
+
+.available {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+.unavailable {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.menu-button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #1f2937;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: auto;
+
+    transition: 0.2s;
+}
+
+.menu-button:hover {
+    background: #374151;
+}
+
+.menu-button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+.no-menu {
+    text-align: center;
+
+    font-size: 18px;
+
+    color: #6b7280;
+}
+
+.menu-loading {
+    text-align: center;
+
+    margin-top: 100px;
+
+    font-size: 24px;
+
+    color: #374151;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .menu-page {
+        padding: 30px;
+    }
+
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .menu-page {
+        padding: 25px 15px;
+    }
+
+    .menu-title {
+        font-size: 30px;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+}
